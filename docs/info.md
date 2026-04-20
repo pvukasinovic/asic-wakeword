@@ -9,11 +9,16 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+This chip is a keyword-spotting inference accelerator. It implements a small depthwise-separable convolutional neural network that classifies short audio segments into a set of wake-word categories.
 
 ## How to test
 
-Explain how to use your project
+Testing requires a microcontroller to drive the SPI interface. Bring up procedure:
+1. Apply power and release reset. 
+2. Load weigts
+3. Load at least one wake word template
+4. Stream MFCC features
+5. Read result
 
 ## External hardware
 

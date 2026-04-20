@@ -23,9 +23,9 @@ project:
 # This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
 pinout:
   # Inputs
-  ui[0]: ""
-  ui[1]: ""
-  ui[2]: ""
+  ui[0]: "spi_sclk"
+  ui[1]: "spi_mosi"
+  ui[2]: "spi_cs_n"
   ui[3]: ""
   ui[4]: ""
   ui[5]: ""
@@ -33,9 +33,9 @@ pinout:
   ui[7]: ""
 
   # Outputs
-  uo[0]: ""
-  uo[1]: ""
-  uo[2]: ""
+  uo[0]: "busy"
+  uo[1]: "done"
+  uo[2]: "irq"
   uo[3]: ""
   uo[4]: ""
   uo[5]: ""
@@ -43,14 +43,14 @@ pinout:
   uo[7]: ""
 
   # Bidirectional pins
-  uio[0]: ""
-  uio[1]: ""
-  uio[2]: ""
-  uio[3]: ""
-  uio[4]: ""
-  uio[5]: ""
-  uio[6]: ""
-  uio[7]: ""
+  uio[0]: "detected[0]"
+  uio[1]: "detected[1]"
+  uio[2]: "detected[2]"
+  uio[3]: "detected[3]"
+  uio[4]: "debug[0]"
+  uio[5]: "debug[1]"
+  uio[6]: "debug[2]"
+  uio[7]: "debug[3]"
 
 # Do not change!
 yaml_version: 6
